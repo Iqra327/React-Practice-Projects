@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/React-Practice-Projects/contact-us-page/static/css/main.3816fa85.css",
+    "main.js": "/React-Practice-Projects/contact-us-page/static/js/main.f57c1e78.js",
+    "index.html": "/React-Practice-Projects/contact-us-page/index.html",
+    "main.3816fa85.css.map": "/React-Practice-Projects/contact-us-page/static/css/main.3816fa85.css.map",
+    "main.f57c1e78.js.map": "/React-Practice-Projects/contact-us-page/static/js/main.f57c1e78.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3816fa85.css",
+    "static/js/main.f57c1e78.js"
+  ]
+}
