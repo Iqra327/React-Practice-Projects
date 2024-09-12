@@ -1,0 +1,13 @@
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8px;
+  height: 72px;
+}
+
+.navLinkSection{
+  display: flex;
+  gap: 24px;
+  font-weight: 500;
+}
