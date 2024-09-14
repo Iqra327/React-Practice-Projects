@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+## Dice Game 🎲
+# `Overview`
+The Dice Game is a simple interactive game built with React and styled-components. 
+Players can select a number and roll the dice to try and match their selected number.
+The game keeps track of the score, rewarding correct guesses and penalizing incorrect ones.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# `Live Demo`
+View the live demo of project here: https://react-practice-projects-gold.vercel.app/
 
-## Available Scripts
+# `Features`
+Number Selection: Players can choose a number between 1 and 6 before rolling the dice.<br>
+Score Tracking: The game keeps track of the player's score, adding the dice value for a correct guess and subtracting points for an incorrect guess.<br>
+Responsive Design: The UI is built with styled-components to ensure a responsive and visually appealing experience across different devices.<br>
+Reset Score: Players can reset their score at any time.<br>
+Show Rules: A section that explains the rules of the game.<br>
 
-In the project directory, you can run:
+# `Technologies Used`
+React: A JavaScript library for building user interfaces.<br>
+styled-components: A CSS-in-JS tool for styling React components.
 
-### `npm start`
+# `How to Play`
+<ul>
+  <li>Select a number between 1 and 6.</li>
+  <li>Click on the "Roll Dice" button to roll the dice.</li>
+  <li>If the rolled number matches your selected number, you gain points equal to the dice value.</li>
+  <li>If the rolled number doesn't match, you lose 2 points.</li>
+  <li>The score can be reset using the "Reset Score" button.</li>
+  <li>Click on "Show Rules" to view the game rules.</li>
+</ul>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# `Project Structure`
+<h2>components/: Contains all the React components used in the game.</h2>
+GamePlay.jsx: The main game component that handles the game logic.<br>
+NumberSelector.jsx: Allows players to select a number.<br>
+TotalScore.jsx: Displays the current score.<br>
+RollDice.jsx: Handles the dice rolling and score updating.<br>
+Rules.jsx: Displays the rules of the game.<br>
+<h2>styled/: Contains the styled-components for consistent design.</h2>
