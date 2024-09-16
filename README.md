@@ -29,4 +29,5 @@ React: For building interactive UIs.<br>
 styled-components: For modular and scoped CSS in JS.<br>
 JavaScript (ES6+): For implementing logic and functionality.<br>
 HTML5 & CSS3: For structuring and styling the projects.<br>
+CSS Framework: Tailwind CSS<br>
 Vite: (Development server & build tool) 
