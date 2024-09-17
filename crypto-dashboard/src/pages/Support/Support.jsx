@@ -1,6 +1,11 @@
+import { Card } from "@chakra-ui/react";
+import DashboardLayout from "../../components/DashboardLayout";
+
 const Support = () => {
   return (
-    <div>support</div>
+    <DashboardLayout>
+      <Card></Card>
+    </DashboardLayout>
   )
 };
 
