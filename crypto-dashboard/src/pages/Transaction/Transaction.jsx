@@ -1,6 +1,8 @@
-import { Button, Card, Flex, Icon, Tab, TabList, TabPanel, TabPanels, Tabs } from "@chakra-ui/react";
+import { Button, Card, Flex, HStack, Icon, Input, InputGroup, InputLeftElement, Tab, TabList, TabPanel, TabPanels, Tabs, Tag } from "@chakra-ui/react";
 import DashboardLayout from "../../components/DashboardLayout";
 import { AiOutlineDownload } from "react-icons/ai";
+import TransactionTable from "./components/TransactionTable";
+import { BsSearch } from "react-icons/bs";
 
 const Transaction = () => {
   const tabs = [
@@ -22,27 +24,42 @@ const Transaction = () => {
     }, 
   ]
   return (
-    <DashboardLayout>
+    <DashboardLayout title="Transactions">
       <Flex justify='flex-end' mt='6' mb='3'>
         <Button leftIcon={<Icon as={AiOutlineDownload} />}>Export CSV</Button>
       </Flex>
-      <Card>
+      <Card borderRadius='1rem'>
       <Tabs>
-        <TabList>
-          <Tab>One</Tab>
-          <Tab>Two</Tab>
-          <Tab>Three</Tab>
+        <TabList pt='4' display='flex' justifyContent='space-between' w='full'>
+          <HStack>
+            {tabs.map((tab) => (
+              <Tab key={tab.name} display='flex' gap='2' pb='4'>{tab.name} 
+                <Tag colorScheme="gray" borderRadius='full'>{tab.count}</Tag>
+              </Tab>
+            ))}
+          </HStack>
+        
+        <InputGroup maxW='200px' pr='6'>
+          <InputLeftElement pointerEvents='none'>
+            <Icon as={BsSearch} />
+          </InputLeftElement>
+          <Input type='tel' placeholder='Search...' />
+        </InputGroup>
+
         </TabList>
 
         <TabPanels>
           <TabPanel>
-            <p>one!</p>
+            <TransactionTable />
           </TabPanel>
           <TabPanel>
-            <p>two!</p>
+            <TransactionTable />
           </TabPanel>
           <TabPanel>
-            <p>three!</p>
+            <TransactionTable />
+          </TabPanel>
+          <TabPanel>
+            <TransactionTable />
           </TabPanel>
         </TabPanels>
       </Tabs>

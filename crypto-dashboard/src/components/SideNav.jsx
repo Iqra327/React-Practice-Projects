@@ -2,9 +2,14 @@ import {Box, Heading, HStack, Icon, Stack, Text} from '@chakra-ui/react';
 import { RxDashboard } from "react-icons/rx";
 import { TbArrowsDoubleNeSw } from "react-icons/tb";
 import { BiSupport } from "react-icons/bi";
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const SideNav = () => {
+  const location = useLocation();
+
+  const isActiveLink = (link)  => {
+    return location.pathname === link
+  }
 
   const navLinks = [
     {
@@ -32,11 +37,12 @@ const SideNav = () => {
           {
             navLinks.map((nav) => (
               <Link to={nav.link}  key={nav.text}>
-                <HStack  
+                <HStack
+                  bg={isActiveLink(nav.link) ? '#F3F3F7' : 'transparent'}
+                  color={isActiveLink(nav.link) ? '#171717' : '#797E82'}  
                   borderRadius = '10px'
                   py='3' 
                   px='4'
-                  color='#797E82'
                   _hover = {{
                     bg: '#F3F3F7',
                     color: '#171717',
@@ -57,7 +63,9 @@ const SideNav = () => {
           borderRadius = '10px'
           py='3' 
           px='4'
-          color='#797E82'
+          bg={isActiveLink('/support') ? '#F3F3F7' : 'transparent'}
+          color={isActiveLink('/support') ? '#171717' : '#797E82'}
+
           _hover = {{
             bg: '#F3F3F7',
             color: '#171717',
