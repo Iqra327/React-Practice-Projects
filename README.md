@@ -21,6 +21,10 @@ It features real-time search functionality, category-based filtering, and displa
 A fun and interactive game where players try to match a selected number with a dice roll to earn points.<br>
 **Live Demo:** https://react-practice-projects-gold.vercel.app/
 
+# Crypto Dashboard
+A cryptocurrency dashboard application built with React, Chakra UI, and React Router DOM. This project allows users to navigate between different pages including a Dashboard, Transactions, and Support, offering a seamless user experience for viewing and managing cryptocurrency data.<br> 
+**Live Demo:** Check out the live demo here: https://react-practice-projects-fs8l.vercel.app/.
+
 # Contact-Us-Page:
 A simple contact us page.
 
